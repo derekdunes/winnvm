@@ -39,8 +39,8 @@ namespace WinNvm
                     }
                 },
                 {
-                    "l|list=",
-                    "To List a installed version of NodeJS",
+                    "l|list",
+                    "To list all installed versions of NodeJS",
                     ver => 
                     {
                         try

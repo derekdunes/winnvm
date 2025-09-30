@@ -34,7 +34,7 @@ namespace WinNvm
                 }
             }
 
-             // Optionally sort versions (lexical or semver)
+             // sort versions (lexical or semver)
             installedVersion.Sort(CompareVersionFolderNames);
 
             return installedVersion;
@@ -115,7 +115,7 @@ namespace WinNvm
 
             if (versions.Count == 0)
             {
-                Console.WriteLine($"No Node versions found in {nvmHome}.");
+                Console.WriteLine($"No Node versions found in {Constants.NvmHome}.");
             }
             else
             {
@@ -135,7 +135,7 @@ namespace WinNvm
             Console.WriteLine("Options:");
             Console.WriteLine(@"
     -i, --install <verison>    To install a new version of NodeJS
-    -l, --list                 To list all WinNvm installed versions of NodeJS
+    -l, --list                 To list all installed versions of NodeJS
     -u, --use <version>        To use the given version of NodeJS
     -r, --remove <version>     To uninstall a version of NodeJS
     -h, --help                 Show this message
